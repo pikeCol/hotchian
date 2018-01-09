@@ -1,0 +1,14 @@
+.font-size(@val){
+    font-size: @val;
+    [data-dpr="2"] &{
+        font-size: 2*@val
+    }
+
+    [data-dpr="3"] &{
+        font-size: 3*@val
+    }
+
+    [data-dpr="4"] &{
+        font-size: 4*@val
+    }
+}
