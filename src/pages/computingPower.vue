@@ -1,20 +1,25 @@
 <template>
   <div >
-    Login
+    co
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
+  import Footer from '../components/Footer'
 
   export default {
-    name:'Login',
+    name:'computingPower',
     data(){
       return{
         msg:''
       }
     },
     mounted(){
+    },
+    components:{
+      Footer
     }
   }
 </script>

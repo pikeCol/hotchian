@@ -1,7 +1,6 @@
-import * as types from '../actionType'
+const Add = 'Add'
 
 // initial state
-// shape: [{ id, quantity }]
 const state = {
   count: 0
 }
@@ -13,16 +12,16 @@ const getters = {
 
 // actions
 const actions = {
-  add (state) {
+  add ({ commit, state }) {
     console.log(state)
-    commit(types.Add)
+    commit(Add)
   }
 }
 
-// mutations
+// mutations 改变状态
 const mutations = {
-  [types.Add] (state) {
-    state.count++
+  Add (state) {
+    state.count = state.count+10
   }
 }
 
