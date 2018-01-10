@@ -14,7 +14,7 @@ export default new Router({
       }
     },
     {
-    	path: '/home/',
+    	path: '/home',
     	name:'home',
       component: function(resolve){
         require(['../pages/Home.vue'],resolve)
@@ -53,7 +53,7 @@ export default new Router({
     },
     {
       path: '/me/',
-      name:'computingPower',
+      name:'me',
       component: function(resolve){
         require(['../pages/me.vue'],resolve)
       }

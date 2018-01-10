@@ -1,27 +1,33 @@
 const Add = 'Add'
+const Tab = 'Tab'
 
 // initial state
 const state = {
-  count: 0
+  selected:'home'
 }
 
 // getters
 const getters = {
-  count:state=>state.count
+  selected:state=>state.selected
 }
 
 // actions
 const actions = {
-  add ({ commit, state }) {
-    console.log(state)
-    commit(Add)
+  tab( {commit, state}, val ){
+    console.log(state,val)
+    commit(Tab,val)
   }
 }
 
 // mutations 改变状态
 const mutations = {
-  Add (state) {
-    state.count = state.count+10
+  Tab (state,val) {
+    console.log(val)
+    state.selected=val
+  },
+  updateSelect (state,value) {
+    state.selected=value
+    
   }
 }
 
