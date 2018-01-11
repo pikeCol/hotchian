@@ -1,15 +1,15 @@
 <template>
   <div class="page-foot">
     <mt-tabbar v-model="selected" @click.native="tab(selected)">
-      <mt-tab-item id="home">
+      <mt-tab-item id="/home">
         <img slot="icon" src="../assets/logo.png">
         首页
       </mt-tab-item>
-      <mt-tab-item id="computingPower">
+      <mt-tab-item id="/computingPower">
         <img slot="icon" src="../assets/logo.png">
         算了
       </mt-tab-item>
-      <mt-tab-item id="me">
+      <mt-tab-item id="/me">
         <img slot="icon" src="../assets/logo.png">
         我的
       </mt-tab-item>
@@ -45,7 +45,7 @@
     methods:{
       tab:function(selected){
         this.$store.dispatch('tab',selected)
-        this.$router.push({name:selected})
+        this.$router.push({path:selected})
       }
     },
     mounted(){

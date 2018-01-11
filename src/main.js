@@ -6,10 +6,9 @@ import router from './router'
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import '../static/js/flexable.js'
 
 import store from './store/index.js'
-import '../static/css/flexable.less'
-import '../static/js/flexable.js'
 
 Vue.config.productionTip = false
 Vue.use(MintUI)

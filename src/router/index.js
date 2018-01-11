@@ -32,7 +32,7 @@ export default new Router({
 					path: 'page2',
     			name:'page2',
 		      component: function(resolve){
-		        require(['../components/page2.vue'],resolve)
+		        require(['../components/page1.vue'],resolve)
 		      }
 				},
 				{

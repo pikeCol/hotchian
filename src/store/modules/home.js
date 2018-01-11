@@ -3,7 +3,7 @@ const Tab = 'Tab'
 
 // initial state
 const state = {
-  selected:'home'
+  selected:'/home'
 }
 
 // getters
